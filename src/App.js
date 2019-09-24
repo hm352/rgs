@@ -10,6 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import Carousel from 'react-bootstrap/Carousel';
 import LogoInstagram from 'react-ionicons/lib/LogoInstagram';
 import LogoYoutube from 'react-ionicons/lib/LogoYoutube';
 import LogoFacebook from 'react-ionicons/lib/LogoFacebook';
@@ -26,7 +27,7 @@ function App() {
         </Row>
         <Row id="titleContent">
           <Col className='titleStuff'>
-            <h1 class="text-center"> ROBERT GEORGE SANDERS </h1>
+            <h1> ROBERT GEORGE SANDERS </h1>
             <h4> Designer/Artist/Pornstar/Basketballer </h4>
             <LogoInstagram color='white'></LogoInstagram>
             <LogoYoutube color='white'></LogoYoutube>
@@ -68,6 +69,31 @@ function App() {
             <h6> some content that about who filmed </h6>
           </Col>
         </Row>
+      </Container>
+      <Container fluid id="carousel">
+        <Carousel>
+          <Carousel.Item>
+              <Image className='full' src={lad}></Image>
+            <Carousel.Caption>
+              <h6> some content that about who filmed </h6>
+              <h6> some content that about who filmed </h6>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image className='full' src={lad}></Image>
+            <Carousel.Caption>
+              <h6> some content that about who filmed </h6>
+              <h6> some content that about who filmed </h6>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image className='full' src={lad}></Image>
+            <Carousel.Caption>
+              <h6> some content that about who filmed </h6>
+              <h6> some content that about who filmed </h6>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </Container>
     </div>
   );
